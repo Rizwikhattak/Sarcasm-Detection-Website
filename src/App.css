@@ -52,6 +52,7 @@ h3 {
   color: white;
   padding: 2px 15px;
   margin: 0px 50px;
+  transition: all 0.3s;
 }
 
 .prim-color:hover {
