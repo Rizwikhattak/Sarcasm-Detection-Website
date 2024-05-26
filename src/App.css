@@ -40,10 +40,20 @@ h3 {
 .BodyLarge {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .overline {
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   font-weight: 700;
+}
+.prim-color {
+  background-color: #ed6a5a;
+  color: white;
+  padding: 2px 15px;
+  margin: 0px 50px;
+}
+
+.prim-color:hover {
+  background-color: #595959;
 }

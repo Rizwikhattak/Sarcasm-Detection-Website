@@ -11,11 +11,7 @@ const Navbar = () => {
           <div className="flex lg:flex-1">
             <button className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <h1 className="logo">SARCASM</h1>
             </button>
           </div>
           <div className="flex lg:hidden">
@@ -44,25 +40,20 @@ const Navbar = () => {
             <div className="relative">
               <button
                 type="button"
-                className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                className="flex items-center gap-x-1 BodySmall leading-6 text-gray-900"
                 aria-expanded="false"
               >
                 Product
               </button>
             </div>
-            <button className="text-sm font-semibold leading-6 text-gray-900">
-              Features
-            </button>
-            <button className="text-sm font-semibold leading-6 text-gray-900">
-              Marketplace
-            </button>
-            <button className="text-sm font-semibold leading-6 text-gray-900">
-              Company
-            </button>
+            <button className="BodySmall text-gray-900">Features</button>
+            <button className="BodySmall text-gray-900">Marketplace</button>
+            <button className="BodySmall text-gray-900">Company</button>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">→</span>
+            <button className="BodyLarge text-gray-900">Log in</button>
+            <button className="BodyLarge prim-color text-gray-900">
+              Sign Up
             </button>
           </div>
         </nav>
@@ -112,48 +103,7 @@ const Navbar = () => {
                       aria-expanded="false"
                     >
                       Product
-                      {/*
-            Expand/collapse icon, toggle classes based on menu open state.
-
-            Open: "rotate-180", Closed: ""
-          */}
-                      <svg
-                        className="h-5 w-5 flex-none"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
                     </button>
-                    {/* 'Product' sub-menu, show/hide based on menu state. */}
-                    <div className="mt-2 space-y-2" id="disclosure-1">
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Analytics
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Engagement
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Security
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Integrations
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Automations
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Watch demo
-                      </button>
-                      <button className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Contact sales
-                      </button>
-                    </div>
                   </div>
                   <button className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                     Features
